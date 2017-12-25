@@ -2,10 +2,6 @@
 
 - [General Findings](#general-findings)
     + [Testing](#testing)
-    + [```var``` Usage](#---var----usage)
-    + [Potential Gas Optimization](#potential-gas-optimization)
-    + [Documentation](#documentation)
-    + [Implicit Typing](#implicit-typing)
 - [Significant Findings](#significant-findings)
   * [High](#high)
     + [```dummyContract.sol: dummyFunction()```](#---dummyContractsol--dummyFunction-----)
@@ -18,26 +14,6 @@
 # General Findings 
 
 ### Testing 
-
-
-
-### ```var``` Usage
-The `var` keyword is used in several places and is not necessary. The following are references we found:
-```
-
-```
-
-### Potential Gas Optimization
-
-
-### Documentation
-
-
-### Implicit Typing
-
-
-### Gas Limit
-
 
 # Significant Findings
 
