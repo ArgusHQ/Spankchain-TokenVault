@@ -4,7 +4,7 @@
     + [Testing](#testing)
 - [Significant Findings](#significant-findings)
   * [High](#high)
-    + [```TokenVault.sol: claim()```](#---TokenVaultsol--claim-----)
+    + [```TokenVault.sol: claim()```](#tokenvaultsol-claim)
   * [Medium](#medium)
     + [```dummyContract.sol: dummyFunction()```](#---dummyContractsol--dummyFunction-----)
   * [Low](#low)
