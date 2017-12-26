@@ -9,7 +9,7 @@
     
   * [Low](#low)
     + [```TokenVault.sol: claim(), setInvestor()```](#tokenvaultsol-claim-setinvestor)
-    + [```TokenVault.sol```](#tokenvaultsol-constructors)
+    + [```TokenVault.sol: constructors```](#tokenvaultsol-constructors)
 
 
 # General Findings 
@@ -44,7 +44,7 @@ Wrap the call in a `require()`.
 
 
 ## Low
-### ```TokenVault.sol: claim(), TokenVault.sol: setInvestor()```
+### ```TokenVault.sol: claim(), setInvestor()```
 
 
 **Description of the Exploit**:
