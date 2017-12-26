@@ -2,42 +2,18 @@
 
 - [General Findings](#general-findings)
     + [Testing](#testing)
-    + [```var``` Usage](#---var----usage)
-    + [Potential Gas Optimization](#potential-gas-optimization)
-    + [Documentation](#documentation)
-    + [Implicit Typing](#implicit-typing)
 - [Significant Findings](#significant-findings)
   * [High](#high)
-    + [```dummyContract.sol: dummyFunction()```](#---dummyContractsol--dummyFunction-----)
+    + [```TokenVault.sol: claim()```](#tokenvaultsol-claim)
   * [Medium](#medium)
     + [```dummyContract.sol: dummyFunction()```](#---dummyContractsol--dummyFunction-----)
-- [Low](#low)
+  * [Low](#low)
     + [```dummyContract.sol: dummyFunction()```](#---dummyContractsol--dummyFunction-----)
 
 
 # General Findings 
 
 ### Testing 
-
-
-
-### ```var``` Usage
-The `var` keyword is used in several places and is not necessary. The following are references we found:
-```
-
-```
-
-### Potential Gas Optimization
-
-
-### Documentation
-
-
-### Implicit Typing
-
-
-### Gas Limit
-
 
 # Significant Findings
 
@@ -48,12 +24,15 @@ The `var` keyword is used in several places and is not necessary. The following 
 
 ## High
 
-### ```dummyContract.sol: dummyFunction()```
+### ```TokenVault.sol: claim()```
 
 **Description of the Exploit**:
 
+The `token.transfer` call is not checked for failure, so an investor may not receive their tokens if the transfer fails but the vault will record that they have claimed their tokens. This locks the investor's tokens in the vault forever.
 
 **Recommendation**:
+
+Wrap the call in a `require()`.
 
 
 ## Medium
