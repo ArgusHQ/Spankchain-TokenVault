@@ -9,7 +9,7 @@
     
   * [Low](#low)
     + [```TokenVault.sol: claim(), setInvestor()```](#tokenvaultsol-claim-setinvestor)
-    + [```TokenVault.sol: constructors```](#tokenvaultsol-constructors)
+    + [```TokenVault.sol: Constructors```](#tokenvaultsol-constructors)
 
 
 # General Findings 
