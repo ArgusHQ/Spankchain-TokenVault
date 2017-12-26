@@ -15,10 +15,9 @@
 # General Findings 
 
 ### Testing 
-There is a missing dependency `csv-load-sync` required to run the tests.
+There is a missing dependency, `csv-load-sync`, that is required to run the tests.
 
-Out of the 10 total tests provided in `vaultTest.js` 7 failed. After further inspection, the logic of the tests was correct, however Solidity would throw before the assert statements were reached. For example in the second test: `"Non-owner can't load the participants"` the `setInvestor()` method is given invalid parameters and the following call to `tokensAllocatedTotal()` correctly fails. However, this triggers an EVM exception which marks the test as failed before the assert statement is reached even though the contract's behavior was correct. 
-
+Of the 10 tests provided in `vaultTest.js`, 7 failed. While the test logic was correct, Solidity would `throw` before the `assert` statements were reached. For example, in the second test, denoted `"Non-owner can't load the participants"`, the `setInvestor()` method is given invalid parameters and the following call to `tokensAllocatedTotal()` correctly fails. However, this triggers an EVM exception, marking the test as failing, before the `assert` statement is reached, even though the contract's behavior is correct.
 
 # Significant Findings
 
