@@ -44,4 +44,13 @@ Wrap the call in a `require()`.
 ### ```dummyContract.sol: dummyFunction()```
 
 # Low
-### ```dummyContract.sol: dummyFunction()```
+### ```TokenVault.sol: claim(), TokenVault.sol: setInvestor()```
+
+
+**Description of the Exploit**:
+
+There is a possibility, albeit unlikely, of an unsigned integer overflow.
+
+**Recommendation**:
+
+Use SafeAdd to ensure that addition operates without undefined behavior.
