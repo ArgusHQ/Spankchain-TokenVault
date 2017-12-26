@@ -8,20 +8,17 @@
 ### ```contracts/```
 ![alt text](images/Coverage/contracts.png "contracts/")
 
-### ```contracts/lib```
-![alt text](images/Coverage/lib.png "lib")
-
-### ```contracts/test```
-![alt text](images/Coverage/test.png "test")
-
 ## Oyente Report
 
-### _______
-![alt text](images/Oyente/____ "______")
+### ```HumanStandardToken.sol```
+![alt text](images/Oyente/HumanStandardToken.png "HumanStandardToken")
 
+### ```Ownable.sol```
+![alt text](images/Oyente/Ownable.png "Ownable")
 
-## SolGraph
+### ```StandardToken.sol```
+![alt text](images/Oyente/StandardToken.png "StandardToken")
 
-### ```_______```
-![alt text](images/SolGraph/______ "______")
+### ```TokenVault.sol```
+![alt text](images/Oyente/TokenVault.png "TokenVault")
 
