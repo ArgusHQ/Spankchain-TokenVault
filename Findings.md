@@ -6,9 +6,10 @@
   * [High](#high)
     + [```TokenVault.sol: claim()```](#tokenvaultsol-claim)
   * [Medium](#medium)
-    + [```dummyContract.sol: dummyFunction()```](#---dummyContractsol--dummyFunction-----)
+    
   * [Low](#low)
-    + [```dummyContract.sol: dummyFunction()```](#---dummyContractsol--dummyFunction-----)
+    + [```TokenVault.sol: claim()```](#tokenvaultsol-claim)
+    + [```TokenVault.sol```](#tokenvaultsol-constructors)
 
 
 # General Findings 
@@ -41,9 +42,9 @@ Wrap the call in a `require()`.
 
 ## Medium
 
-### ```dummyContract.sol: dummyFunction()```
 
-# Low
+
+## Low
 ### ```TokenVault.sol: claim(), TokenVault.sol: setInvestor()```
 
 
@@ -59,6 +60,6 @@ Use SafeAdd to ensure that addition operates without undefined behavior.
 
 **Recommendation**:
 
-It is good practice to initialize the constructors to the their starting values even if it is zero.
+It is good practice to initialize the constructors to the their starting values even if it is zero. (e.g. 'lockedAt')
 
 
