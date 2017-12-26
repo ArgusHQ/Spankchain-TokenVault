@@ -15,7 +15,7 @@
 
 # TokenVault.sol
 ## Description of contract system
-This contract is an interface for LoopringProtocolImpl.sol
+This contract is a vault that allows tokens of investors to be locked up for a period of time.
 
 ## Functions
 ### TokenVault
