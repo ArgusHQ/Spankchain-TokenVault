@@ -26,7 +26,7 @@ function TokenVault(
   uint _tokensToBeAllocated)
 ```
 
-This function instantiates the vault. It accepts a UNIX timestamp to indicate when the tokens should be unlocked. It also accepts a token contract, which indicates which token we intend to lock up. Finally, it accpets the number of tokens that we expect the vault to hold.
+This function instantiates the vault. It accepts a UNIX timestamp to indicate when the tokens should be unlocked. It also accepts a token contract, which indicates which token we intend to lock up. Finally, it accepts the number of tokens that we expect the vault to hold.
 
 ### setInvestor
 ``` 
@@ -44,7 +44,7 @@ function lock()
   onlyOwner
 ```
 
-This function sets the `lockedAt` variable to the time that the function is called if two conditions are met. The first is that the vault should not already be locked. The second is that the balance of the vault contract (in the specified token) should equal the sum of amounts allocated in the setInvestor function. This sum is recorded in the `tokensAllocatedTotal` state variable. 
+This function sets the `lockedAt` variable to the time that the function is called if two conditions are met. The first is that the vault should not already be locked. The second is that the balance of the vault contract (in the specified token) should equal the sum of the amounts allocated in the setInvestor function. This sum is recorded in the `tokensAllocatedTotal` state variable. 
 
 ### recoverFailedLock
 ```
@@ -66,7 +66,7 @@ This function returns the balance of the vault.
 function claim()
 ```
 
-This function allows an investor to claim their tokens. The conditions that are checked include checking that the vault was locked, the current time is after the specified end freeze time, the balance of this investor is positive (ensuring this investor is owed tokens), and the investor has not claimed their tokens. If the conditions are met the tokens are transferred to the investor. 
+This function allows an investor to claim their tokens. The conditions that are checked include checking that the vault was locked, the current time is after the specified end freeze time, the balance of this investor is positive (ensuring this investor is owed tokens), and the investor has not claimed their tokens. If the conditions are met, then the tokens are transferred to the investor. 
 
 ### getState
 ```
