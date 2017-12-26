@@ -79,4 +79,5 @@ This function returns the current state of the vault. The vault is `Loading` if 
  The following contracts were used:
 - HumanStandrardToken.sol
 - StandardToken.sol
+- Token.sol
 - Ownable.sol
