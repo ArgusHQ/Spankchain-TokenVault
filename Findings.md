@@ -8,7 +8,7 @@
   * [Medium](#medium)
     
   * [Low](#low)
-    + [```TokenVault.sol: claim()```](#tokenvaultsol-claim)
+    + [```TokenVault.sol: claim(), setInvestor()```](#tokenvaultsol-claim-setinvestor)
     + [```TokenVault.sol```](#tokenvaultsol-constructors)
 
 
