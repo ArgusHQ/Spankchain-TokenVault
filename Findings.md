@@ -60,6 +60,6 @@ Use SafeAdd to ensure that addition operates without undefined behavior.
 
 **Recommendation**:
 
-It is good practice to initialize the constructors to the their starting values even if it is zero. (e.g. 'lockedAt')
+It is good practice to initialize the state variables to some default values in the constructor even if the default is zero. (e.g. 'lockedAt')
 
 
