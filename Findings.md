@@ -54,3 +54,11 @@ There is a possibility, albeit unlikely, of an unsigned integer overflow.
 **Recommendation**:
 
 Use SafeAdd to ensure that addition operates without undefined behavior.
+
+### ```TokenVault.sol: Constructors```
+
+**Recommendation**:
+
+It is good practice to initialize the constructors to the their starting values even if it is zero.
+
+
